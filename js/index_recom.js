@@ -8,24 +8,29 @@ $(function() {
 		success: function(data){
 			for(var i in data.data.list){
 				str += `
+						<li class="ph">	
 							<a href=''>
-								<img src = '${data.data.list[i].image}' class="pic">
+								<img src = '${data.data.list[i].image}'>
 							</a>
+						</li>
 						`;
 			}
-			$("#banner").append(str);
+			$(".pic").append(str);
 			//轮播
 			
 			setInterval(function(){
 				index++;
-				if(index>$(".pic").length-1){index = 0;}
-				$(".pic").eq(index).fadeIn().siblings().fadeOut();
+				if(index>$(".ph").length-1){index = 0;}
+				
+				$(".ph").eq(index).fadeIn().siblings().fadeOut();
 				$(".circle li").eq(index).animate({width:"0.25rem"}).siblings().animate({width:"0.1rem"});
-				$(".circle li").eq(index)").bind("click", function(){
-					
-				});
+				
 			},3500)
-			
+			$(".circle li").on("click", function(){
+				$(this).animate({width:"0.25rem"}).siblings().animate({width:"0.1rem"});
+				$(".ph").eq($(this).index()).fadeIn().siblings().fadeOut();
+				index = $(this).index();
+			});
 			
 			
 		}
