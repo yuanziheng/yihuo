@@ -102,3 +102,53 @@ header #head p {
 #nav ul li:nth-child(1) a {
 	color: #EEC14F;
 }
+
+section{
+	font-size: 0.12rem;
+}
+
+section>ul{
+	width: 93.6%;
+	margin: 0 auto;
+	min-height: 0.5rem;
+}
+
+section ul li{
+	margin-top: 0.1rem;
+	background: #EEEEEE;
+	border-radius:0.08rem;
+	overflow: hidden;
+}
+
+section p{
+	text-indent: 0.1rem;
+}
+
+section .title{
+	font-size: 0.12rem;
+	color: #333333;
+	line-height: 0.24rem;
+	font-weight: bold;
+}
+
+section .subtitle{
+	font-size: 0.1rem;
+	color: #EEC14F;
+	float: right;
+	line-height: 0.24rem;
+	margin-right: 0.15rem;
+}
+
+section .name{
+	font-size: 0.1rem;
+	color: #666666;
+	line-height: 0.2rem;
+}
+
+section .number{
+	font-size: 0.08rem;
+	color: #EEC14F;
+	float: right;
+	line-height: 0.2rem;
+	margin-right: 0.15rem;
+}
