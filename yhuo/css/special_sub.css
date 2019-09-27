@@ -1,0 +1,53 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+body,
+html {
+	font-size: 26.66vw;
+	height: 100%;
+}
+
+section {
+	width: 100%;
+	flex: 1;
+	overflow-y: auto;
+}
+
+header {
+	width: 100%;
+	background: #4A4942;
+	height: 0.4rem;
+}
+
+header #head {
+	width: 93.6%;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+	font-size: 0.2rem;
+}
+
+header #head .icon-iconfontjiantouzuo {
+	position: absolute;
+	left: 0;
+	color: #EEC14F;
+	font-size: 0.24rem;
+	line-height: 0.4rem;
+}
+
+header #head .icon-shangchuan {
+	position: absolute;
+	right: 0;
+	color: #EEC14F;
+	font-size: 0.24rem;
+	line-height: 0.4rem;
+}
+
+header #head p {
+	text-align: center;
+	color: #EEC14F;
+	line-height: 0.4rem;
+	font-size: 0.16rem;
+}

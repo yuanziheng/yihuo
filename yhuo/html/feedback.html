@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/feedback.css"/>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433565_hgpy2yee09.css"/>
+	</head>
+	<body>
+		<header>
+			<div id="head">
+				<span class="iconfont icon-iconfontjiantouzuo"></span>
+				<p>意见反馈</p>
+			</div>
+		</header>
+		<section>
+			<textarea class="question">请输入你的问题</textarea>
+			<input type="text" placeholder="请留下邮箱(选填)" class="email"/>
+			<span class="warn"></span>
+			<input type="submit" value="提交" class="submit"/>
+		</section>
+		
+		
+		
+		<script type="text/javascript">
+			var submit = document.getElementsByClassName("submit")[0];
+			var email = document.getElementsByClassName("email")[0];
+			var reg = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+			var oSpan = document.getElementsByClassName("warn")[0];
+			submit.onclick = function(){
+				var content = email.value;
+				content = content.replace(/(^\s*)|(\s*$)/g, '');//去除空格;
+				if(content != '' || content != undefined || content != null){
+					if(reg.test(content)==false){
+						oSpan.innerText = "邮箱格式不正确！"
+					}else{
+						oSpan.innerText = "";
+					}
+				}
+				if(content == '' || content == undefined || content == null){
+					oSpan.innerText = "";
+				}
+			}
+		</script>
+	</body>
+</html>
