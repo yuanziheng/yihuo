@@ -48,7 +48,9 @@ header #head .icon-fangdajing{
 	position: absolute;right: 0;font-size: 0.32rem;color: #EEC14F;line-height: 0.4rem;text-align: right;
 }
 header #head .icon-iconfontjiantouzuo{position: absolute;left: 0;font-size: 0.32rem;color: #EEC14F;line-height: 0.4rem;}
-
+section::-webkit-scrollbar {
+        display: none;
+   }
 section h3{
 	font-size: 0.14rem;
 	text-indent: 0.18rem;

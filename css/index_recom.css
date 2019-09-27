@@ -33,7 +33,7 @@ header {
 }
 
 .head ul {
-	width: 105%;
+	width: 310%;
 }
 
 .head li {
@@ -43,6 +43,11 @@ header {
 	margin: 0 0.16rem;
 	position: relative;
 }
+
+
+
+
+
 
 .head li>a {
 	color: rgba(255, 255, 255, 1);
@@ -140,11 +145,17 @@ footer {
 #banner{
 	width: 3.5rem;height: 1.65rem;background: gray;position: absolute;left: 0.12rem;top: 0.80rem
 }
-#banner .circle {width: 100%;height: 100%;position: relative;}
+#banner .circle {width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
 #banner .circle li{width: 0.1rem;height: 0.1rem;background: white;border-radius:0.1rem;z-index: 99;position: relative;float: left;top: 1.4rem;margin-left: 0.2rem;left: 0.75rem;border: 0.01rem solid #979797;}
 #banner .circle .active{width: 0.25rem;}
-#banner img{width: 3.5rem;height: 1.65rem;position: absolute;top: 0;left: 0;}
-#banner .pic{width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+
+
+#banner img{width: 3.5rem;height: 1.65rem;}
+#banner .ph{width: 3.5rem;height: 1.65rem;position: absolute;top: 0;left: 3.5rem;}
+#banner .pic{width: 100%;height: 100%;position: relative;overflow: hidden;}
+#banner .ph:nth-child(1){width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+
+
 
 #linkclass{width: 100%;height: 0.64rem;background: white;margin-top: 0.8rem;}
 #linkclass>ul{width: 93.6%;margin: 0.05rem auto;display: flex;justify-content: space-between;}
