@@ -10,10 +10,11 @@ html {
 }
 
 section {
-	width: 100%;
+	width: 93.6%;
+	margin:0 auto;
 	flex: 1;
 	overflow-y: auto;
-	background: #f7f7f9;
+	font-size: 0.12rem;
 }
 
 header{
@@ -48,15 +49,113 @@ header #head .icon-fangdajing{
 }
 header #head .icon-iconfontjiantouzuo{position: absolute;left: 0;font-size: 0.32rem;color: #EEC14F;line-height: 0.4rem;}
 
+section h3{
+	font-size: 0.14rem;
+	text-indent: 0.18rem;
+	position: relative;
+	line-height: 0.16rem;
+	margin-top: 0.11rem;
+	line-height: 0.2rem;
+}
+section h3:before{
+	content: '';
+	width: 0.04rem;
+	height: 0.16rem;
+	background: #EEC14F;
+	position: absolute;
+	left: 0;
+}
+section .items{
+	display: flex;
+	overflow-x: auto;
+}
+.items::-webkit-scrollbar {
+        display: none;
+}
 
+section .item{
+	float: left;
+	width: 0.7rem;
+	height: 1.1rem;
+	margin:0.06rem 0.22rem 0 0;
+	text-align: center;
+	position: relative;
+}
+section .item img{
+	border-radius: 0.05rem;
+}
+section .item p{
+	font-size: 0.1rem
+}
+section .item span{
+	font-size: 0.08rem
+}
+section .item label{
+	width: 0.12rem;
+	height: 0.12rem;
+	border-radius: 50%;
+	background: #EEC14F;
+	color: white;
+	font-size: 0.1rem;
+	text-align: center;
+	line-height: 0.12rem;
+	position: absolute;
+	right: -0.05rem;
+	top: 0.6rem;
+}
 
-
-
-
-
-
-
-
+section a{
+	display: block;
+	width: 3.5rem;
+	height: 0.77rem;
+	background:gold;
+	border-radius: 0.1rem;
+	margin-top: 0.06rem;
+	position: relative;
+}
+section a p{
+	font-size: 0.22rem;
+	color: white;
+	line-height: 0.4rem;
+	margin-left: 0.2rem;
+	float: left;
+	display: inline;
+}
+section a span{
+	display: inline-block;
+	width: 0.64rem;
+	height: 0.22rem;
+	text-align: center;
+	line-height: 0.22rem;
+	position: absolute;
+	bottom: 0.06rem;
+	right: 0.2rem;
+	border: 0.01rem solid white;
+	color: white;
+	border-radius: 0.2rem;
+}
+section .news{
+	width: 100%;
+	
+}
+section .news .new{
+	border: 0.01rem solid #D8D8D8;
+	border-radius: 0.1rem;
+	overflow: hidden;
+	margin-top: 0.1rem;
+}
+section .news .new .head-pic{
+	border-radius: 50%;
+	margin: 0.08rem 0 0.08rem 0.08rem;
+	float: left;
+	
+}
+section .news .new p{
+	text-indent: 0.11rem;
+	margin-top: 0.11rem;
+	line-height: 0.12rem;
+	font-size: 0.11rem;
+}
 
 footer {
 	width: 100%;
