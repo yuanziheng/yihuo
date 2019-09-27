@@ -1,0 +1,42 @@
+body {display: flex;flex-direction: column;}
+
+body,html {font-size: 26.66vw;height: 100%;}
+
+
+
+header{width: 100%;opacity:1;}
+.head_l{height:0.58rem;background:rgba(74,73,66,1);}
+.head_l ul li a{line-height: 0.58rem;}
+.head_l ul li a span {font-size:0.16rem;color:#EEC14F}
+.head_l li{font-size:0.16rem;color:#EEC14F;float:left;height:0.58rem;line-height: 0.58rem;}
+.head_l li:nth-child(1){margin-left:0.12rem}
+.head_l li:nth-child(2){margin-left:1.1rem}
+.head{width:100%;height: 0.35rem;}
+.head ul li{float:left;}
+.head ul li a{padding:0.08rem 0.78rem 0.07rem 0.78rem;display: inline-block;font-size:0.14rem}
+.head ul li:nth-child(1) a{color:#EEC14F;border-bottom: 1px solid #EEC14F;}
+
+
+section{width: 100%;flex: 1;overflow-y: auto;background: #f7f7f9;padding:0 0.12rem}
+.content{overflow: hidden;margin-top:0.1rem;border-radius: 0.1rem;width:3.51rem}
+.content>div:nth-child(1){position: relative;}
+.content>div:nth-child(1) span{display:block;position: absolute;z-index: 2;width:0.49rem;height:0.2rem;background:#EEC14F ;right:0.09rem;top:0.08rem;border-radius: 0.2rem;
+line-height: 0.2rem;text-align: center;}
+.content>div:nth-child(2)>div{float:left;margin-top: 0.02rem;}
+.content>div:nth-child(2){background: #EEEEEE;height:0.48rem;padding-left:0.09rem}
+.content>div:nth-child(2)>div:nth-child(2){padding-left:0.05rem}
+.content>div:nth-child(2)  div:nth-child(1) img{width:0.36rem;border-radius:50%;height:0.36rem}
+.content>div:nth-child(2)  div:nth-child(2) div:nth-child(1) span:nth-child(1){color:#333333;font-size:0.12rem;display:inline-block;}
+.content>div:nth-child(2)  div:nth-child(2) div:nth-child(2) span:nth-child(2){color:#EEC14F;font-size:0.1rem;display:inline-block;margin-left: 1.37rem;}
+.content>div:nth-child(2)  div:nth-child(2) div:nth-child(2){margin-top: 0.05rem;}
+
+footer{width: 100%;height: 0.49rem;background:rgba(74,73,66,1);display: flex;justify-content: space-around;}
+
+#foot>a{text-align: center;color: white;display: flex;flex-direction: column;margin-top: 0.03rem;font-size: 0.24rem;}
+#foot a span {
+	font-size: 0.12rem;
+	color: white;
+}
+
+#foot>a:nth-child(1){color: #EEC14F;}
+#foot>a:nth-child(1) span{color: #EEC14F;}

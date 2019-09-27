@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/search.css"/>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433565_hgpy2yee09.css"/>
+		<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div class="head_l">
+				<input type="search" name="" id="" value="" placeholder="搜索"/>
+				<label>取消</label>
+			</div>
+		</header>
+		<section>
+			<div class="gongju">
+				<h3>工具</h3>
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="qita">
+				<h3>其他</h3>
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="studystyle">
+				<h3>学习方式</h3>
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="liupai">
+				<h3>流派</h3>
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="leixing">
+				<h3>类型</h3>
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="duixiang">
+				<h3>对象</h3>
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="search">
+				<h3>搜索</h3>
+				<ul>
+					
+				</ul>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		var Gj=document.getElementsByClassName("gongju")[0];
+		var Ul1=Gj.children[1];
+		var Qt=document.getElementsByClassName("qita")[0];
+		var Ul2=Qt.children[1];
+		var Ss=document.getElementsByClassName("studystyle")[0];
+		var Ul3=Ss.children[1];
+		var Lp=document.getElementsByClassName("liupai")[0];
+		var Ul4=Lp.children[1];
+		var Lx=document.getElementsByClassName("leixing")[0];
+		var Ul5=Lx.children[1];
+		var Dx=document.getElementsByClassName("duixiang")[0];
+		var Ul6=Dx.children[1];
+		var Sr=document.getElementsByClassName("search")[0];
+		var Ul7=Sr.children[1];
+		var Dxiang1=["水彩","彩铅","钢笔","水粉","马克笔","圆珠笔","丙烯","油画","版画","国画写意","国画工笔"];
+		var Dxiang2=["插画","绘画","时尚","手作","漫画","卡通","舞蹈","拓印","手账","乐器"];
+		var Dxiang3=["想画","想学","想听"];
+		var Dxiang4=["抽象","写实","古典","当代","印象","西方","传统","现实主义"];
+		var Dxiang5=["技法","解读"];
+		var Dxiang6=["风景","人像","静物","动物","山水","花鸟","书画"];
+		var Dxiang7=["枯木水墨线下活动","枯枝水墨"];
+		for(let i=0;i<Dxiang1.length;i++){
+			console.log(Dxiang1[i])
+			 var Li=document.createElement("li");
+			 var Aa=document.createElement("a");
+			 Aa.innerText=Dxiang1[i];
+			 Li.appendChild(Aa);
+			 Ul1.appendChild(Li);
+		}
+			Gj.appendChild(Ul1);
+			
+			
+			for(let i=0;i<Dxiang2.length;i++){
+				console.log(Dxiang2[i])
+				 var Li=document.createElement("li");
+				 var Aa=document.createElement("a");
+				 Aa.innerText=Dxiang2[i];
+				 Li.appendChild(Aa);
+				 Ul2.appendChild(Li);
+			}
+				Qt.appendChild(Ul2);
+				
+			  
+			  for(let i=0;i<Dxiang3.length;i++){
+			  	console.log(Dxiang1[i])
+			  	 var Li=document.createElement("li");
+			  	 var Aa=document.createElement("a");
+			  	 Aa.innerText=Dxiang3[i];
+			  	 Li.appendChild(Aa);
+			  	 Ul3.appendChild(Li);
+			  }
+			  	Ss.appendChild(Ul3);
+				
+				for(let i=0;i<Dxiang4.length;i++){
+					console.log(Dxiang4[i])
+					 var Li=document.createElement("li");
+					 var Aa=document.createElement("a");
+					 Aa.innerText=Dxiang4[i];
+					 Li.appendChild(Aa);
+					 Ul4.appendChild(Li);
+				}
+					Lp.appendChild(Ul4);
+					
+					for(let i=0;i<Dxiang5.length;i++){
+						console.log(Dxiang5[i])
+						 var Li=document.createElement("li");
+						 var Aa=document.createElement("a");
+						 Aa.innerText=Dxiang5[i];
+						 Li.appendChild(Aa);
+						 Ul5.appendChild(Li);
+					}
+						Dx.appendChild(Ul5);
+						
+					for(let i=0;i<Dxiang6.length;i++){
+						console.log(Dxiang6[i])
+						 var Li=document.createElement("li");
+						 var Aa=document.createElement("a");
+						 Aa.innerText=Dxiang6[i];
+						 Li.appendChild(Aa);
+						 Ul6.appendChild(Li);
+					}
+						Lx.appendChild(Ul6);
+						
+						for(let i=0;i<Dxiang7.length;i++){
+							console.log(Dxiang7[i])
+							 var Li=document.createElement("li");
+							 var Aa=document.createElement("a");
+							 Aa.innerText=Dxiang7[i];
+							 Li.appendChild(Aa);
+							 Ul7.appendChild(Li);
+						}
+							Sr.appendChild(Ul7);
+		
+			
+		
+	</script>
+</html>

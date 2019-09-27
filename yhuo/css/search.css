@@ -1,0 +1,49 @@
+body {display: flex;flex-direction: column;}
+body,html {font-size: 26.66vw;height: 100%;}
+.head_l{height:0.58rem;background: #4A4942;}
+.head_l input{border: 0;width:3.13rem;height:0.22rem;border-radius: 0.04rem;float:left;margin:0.29rem 0 0 0.12rem}
+.head_l label{float:left;margin:0.29rem 0 0 0.1rem;color:#FFFFFF;font-size:0.14rem}
+
+section{width: 100%;flex: 1;overflow-y: auto;background: #f7f7f9;}
+.gongju{overflow: hidden;padding-top:0.1rem}
+.gongju h3{font-size:0.14rem;color:#333333;text-indent: 0.12rem;}
+.gongju ul{overflow: hidden;padding:0.12rem 0 0 0.17rem}
+.gongju ul li{float:left;padding:0 0.12rem;border-radius: 0.15rem;height:0.15rem;font-size:0.1rem;border:1px solid #979797;margin:0 0.1rem 0.1rem 0;
+text-align: center;line-height: 0.15rem;}
+
+.qita{overflow: hidden;padding-top:0.1rem}
+.qita h3{font-size:0.14rem;color:#333333;text-indent: 0.12rem;}
+.qita ul{overflow: hidden;padding:0.12rem 0 0 0.17rem}
+.qita ul li{float:left;padding:0 0.12rem;border-radius: 0.15rem;height:0.15rem;font-size:0.1rem;border:1px solid #979797;margin:0 0.1rem 0.1rem 0;
+text-align: center;line-height: 0.15rem;}
+
+.studystyle{overflow: hidden;padding-top:0.1rem}
+.studystyle h3{font-size:0.14rem;color:#333333;text-indent: 0.12rem;}
+.studystyle ul{overflow: hidden;padding:0.12rem 0 0 0.17rem}
+.studystyle ul li{float:left;padding:0 0.12rem;border-radius: 0.15rem;height:0.15rem;font-size:0.1rem;border:1px solid #979797;margin:0 0.1rem 0.1rem 0;
+text-align: center;line-height: 0.15rem;}
+
+.liupai{overflow: hidden;padding-top:0.1rem}
+.liupai h3{font-size:0.14rem;color:#333333;text-indent: 0.12rem;}
+.liupai ul{overflow: hidden;padding:0.12rem 0 0 0.17rem}
+.liupai ul li{float:left;padding:0 0.12rem;border-radius: 0.15rem;height:0.15rem;font-size:0.1rem;border:1px solid #979797;margin:0 0.1rem 0.1rem 0;
+text-align: center;line-height: 0.15rem;}
+
+.leixing{overflow: hidden;padding-top:0.1rem}
+.leixing h3{font-size:0.14rem;color:#333333;text-indent: 0.12rem;}
+.leixing ul{overflow: hidden;padding:0.12rem 0 0 0.17rem}
+.leixing ul li{float:left;padding:0 0.12rem;border-radius: 0.15rem;height:0.15rem;font-size:0.1rem;border:1px solid #979797;margin:0 0.1rem 0.1rem 0;
+text-align: center;line-height: 0.15rem;}
+
+.duixiang{overflow: hidden;padding-top:0.1rem}
+.duixiang h3{font-size:0.14rem;color:#333333;text-indent: 0.12rem;}
+.duixiang ul{overflow: hidden;padding:0.12rem 0 0 0.17rem}
+.duixiang ul li{float:left;padding:0 0.12rem;border-radius: 0.15rem;height:0.15rem;font-size:0.1rem;border:1px solid #979797;margin:0 0.1rem 0.1rem 0;
+text-align: center;line-height: 0.15rem;}
+
+.search{overflow: hidden;padding-top:0.1rem}
+.search h3{font-size:0.14rem;color:#333333;text-indent: 0.12rem;}
+.search ul{overflow: hidden;padding:0.12rem 0 0 0.17rem}
+.search ul li{float:left;padding:0 0.12rem;border-radius: 0.15rem;height:0.15rem;font-size:0.1rem;border:1px solid #979797;margin:0 0.1rem 0.1rem 0;
+text-align: center;line-height: 0.15rem;}
+

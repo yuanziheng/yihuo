@@ -1,0 +1,31 @@
+body {display: flex;flex-direction: column;}
+
+body,html {font-size: 26.66vw;height: 100%;}
+
+
+
+header{width: 100%;opacity:1;}
+.head_l{height:0.58rem;background:rgba(74,73,66,1);}
+.head_l ul li a{line-height: 0.58rem;}
+.head_l ul li a span {font-size:0.16rem;color:#EEC14F}
+.head_l li{font-size:0.16rem;color:#EEC14F;float:left;height:0.58rem;line-height: 0.58rem;}
+.head_l li:nth-child(1){margin-left:0.12rem}
+.head_l li:nth-child(2){margin-left:1.40rem}
+
+section{width: 100%;flex: 1;overflow-y: auto;background: #EEEEEE;}
+.content{padding:0 0.12rem;background: #FFFFFF;}
+.content div{padding:0.07rem 0 0.11rem 0;border-bottom: 1px solid #EEEEEE;font-size:0.14rem;}
+.content div a{color:#333333;display: block;width: 100%;}
+.content div a span{display: inline-block;float:right}
+.tuichu {font-size:0.14rem;line-height: 0.35rem;display: inline-block;width:100%;text-align: center;background: #FFFFFF;margin-top:0.15rem}
+.tuichu a{color:#333333;}
+footer{width: 100%;height: 0.49rem;background:rgba(74,73,66,1);display: flex;justify-content: space-around;}
+
+#foot>a{text-align: center;color: white;display: flex;flex-direction: column;margin-top: 0.03rem;font-size: 0.24rem;}
+#foot a span {
+	font-size: 0.12rem;
+	color: white;
+}
+
+#foot>a:nth-child(1){color: #EEC14F;}
+#foot>a:nth-child(1) span{color: #EEC14F;}
