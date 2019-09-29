@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1433565_q328pjutsse.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/coupon.css">
+    <style>
+   
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="headBtm">
+            <span class="iconfont icon-iconfontjiantouzuo"></span>
+            <p>优惠券</p> 
+        </div>
+    </header>
+    <section class="content">
+        <div class="contentNav">
+            <ul>
+                <li>未使用</li>
+                <li>已使用</li>
+                <li>已失效</li>
+            </ul>
+        </div>
+        <div class="type">
+            <div>
+                <input type="text" placeholder="请输入兑换码">
+                <button>兑换</button>  
+            </div>
+             <div>哈哈哈哈哈哈哈</div>
+             <div>嘻嘻嘻嘻嘻嘻嘻</div>
+        </div>
+         
+    </section>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+    $(function(){
+        $(".content .contentNav ul li").on("click",function(){
+            $(this).css({"color":"#EEC14F"})
+            .siblings().css({"color":"#333333"})
+        });
+        $(".content .contentNav ul li").mouseover(function(){//切换页面
+		$(this).addClass('on').siblings().removeClass('on');
+		var index = $(this).index();
+		number = index;
+		$('.content .type>div').hide();
+		$('.content .type>div:eq('+index+')').show();
+	});
+    })
+    </script>
+</body>
+</html>

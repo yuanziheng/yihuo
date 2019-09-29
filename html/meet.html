@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1433565_fgqtyyilf7.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/meet.css">
+</head>
+<body>
+    <header class="head">
+        <p>遇见</p>
+    </header>
+    <section class="content">
+        <div class="panel-header">
+               <span class="shu"></span><span class="tab">修心之旅一遇见最美得Ta，成就最美的你</span>
+        </div>  
+        <img src="img/meet-3.jpg" alt="">
+        <div class="aside">
+            <div class="Top">
+                <h1></h1>
+                <h2>先收藏</h2>
+            </div>
+            <div class="Mid">
+                <h1></h1>
+                <h2>开始画</h2>
+            </div>    
+            <div class="Btm">
+                <h1></h1>
+                <h2>不喜欢</h2>
+            </div>
+        </div>         
+    </section>
+    <footer class="foot">
+        <ul>
+            <li>
+                <span class="iconfont icon-zhuyeshouyefangzidian"></span>
+                <b>首页</b>
+            </li>
+            <li>
+                <span class="iconfont icon-tupian"></span>
+                <b>遇见</b>
+            </li>
+            <li>
+                <span class="iconfont icon-shequ"></span>
+                <b>社区</b>
+            </li>
+            <li>
+                <span class="iconfont icon-wode"></span>
+                <b>我的</b>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+    $(function(){
+        $(".foot li").on("click",function(){
+            $(this).css({"color":"#EEC14F"})
+            .siblings().css({"color":"#fff"});
+        });
+
+    })
+    </script>      
+</body>
+</html>

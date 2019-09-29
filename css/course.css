@@ -1,0 +1,136 @@
+html,body{
+    height: 100%;
+}
+html{
+    font-size: 13.3333333vw;
+}
+body{
+    display: flex;
+    flex-direction:column;
+}
+.head{
+    height: 0.8rem;
+    background: #4A4942; 
+}
+.head .headBtm{
+    color: #EEC14F;
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size:0.32rem; 
+}
+.head .headBtm span:nth-of-type(1){
+    margin-left: 0.24rem;
+    font-size:0.42rem; 
+}
+.head .headBtm span:nth-of-type(3){
+    margin-right: 0.24rem;
+    font-size:0.4rem; 
+}
+.content{
+    flex: 1;
+    overflow-y:auto; 
+    background: #FFFFFF;
+}
+.content::-webkit-scrollbar {display:none}
+.content .contentNav{
+    height: 0.74rem;
+    border-bottom: 0.02rem solid #D8D8D8;
+    overflow: hidden;
+}
+.content .contentNav ul{
+    margin-top: 0.16rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.28rem;
+}
+.content .contentNav ul li{
+    width: 2.48rem;
+    height: 0.4rem;
+    color: #333333;
+    text-align: center;
+    line-height: 0.4rem;
+    border-right:0.02rem solid #D8D8D8; 
+}
+.content .contentNav ul li:first-of-type{
+    color: #EEC14F;
+}
+.content .contentNav ul li:last-of-type{
+    border: none;
+}
+.content .course{
+    width:7.02rem ;
+    margin: 0 auto;
+    position: relative;
+  
+}
+.content .course .course1{
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+.content .course .course2{
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    display: none;
+}
+.content .course .course3{
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    display: none;
+}
+.content .course ul li{
+    height: 4.14rem;
+    width:7.02rem ;
+    margin-top: 0.2rem;
+}
+.content .course ul li img{
+     width: 7.02rem;
+     height: 3.18rem;
+     border-radius:0.12rem 0 0 0; 
+}
+.content .course .courseId{
+    width: 7.02rem;
+    height: 0.96rem;
+    background: #EEEEEE;
+    overflow: hidden;
+}
+.content .course .courseId h3{
+    text-indent: 0.2rem;
+    width:3.24rem;
+    height:0.34rem;
+    font-size:0.24rem;
+    font-family:PingFang SC;
+    line-height:0.34rem;
+    color:rgba(51,51,51,1);
+    margin-top: 0.1rem;
+}
+.content .course .courseId p{
+    width: 6.58rem;
+    height: 0.28rem;
+    margin: 0 auto;
+    position: relative;
+}
+.content .course .courseId p span:nth-of-type(1){
+    display: inline-block;
+    height:0.28rem;
+    font-size:0.2rem;
+    font-family:PingFang SC;
+    line-height:0.28rem;
+    color:rgba(102,102,102,1);
+}
+.content .course .courseId p span:nth-of-type(2){
+    display: inline-block;
+    height:0.28rem;
+    font-size:0.2rem;
+    font-family:PingFang SC;
+    line-height:0.28rem;
+    color:rgba(102,102,102,1);
+    position: absolute;
+    top:0.06rem;
+    right: 0; 
+    color: #EEC14F;
+}

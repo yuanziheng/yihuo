@@ -1,0 +1,171 @@
+html,body{
+    height: 100%;
+}
+html{
+    font-size: 13.333333333vw;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    height:0.8rem ;
+    background:#4A4942 ;
+}
+.head .headBtm{
+    height: 0.6rem;
+   position: relative;
+    margin-top: 0.1rem;
+}
+.head .headBtm span:first-of-type{
+    margin-left: 0.2rem;
+    color: #EEC14F;
+    font-size: 0.42rem;
+    margin-top: 0.05rem;
+}
+.head .headBtm input{
+    width: 5.62rem;
+    height:0.6rem ;
+    border: solid 0.02rem #fff; 
+    border-radius:0.1rem;
+    margin-left:0.2rem; 
+    background: #fff;
+    box-sizing: border-box;
+    padding:0.12rem;
+    font-size: 0.12rem;
+}
+
+.head .headBtm .into{
+    font-size: 0.28rem;
+    color: #EEC14F;
+    margin-left: 0.2rem;
+}
+.head .headBtm h4{
+    position: absolute;
+    left:2.22rem; 
+    top: 0.14rem;
+    color: #999999;
+    font-size: 0.24rem;
+}
+.content{
+    flex: 1;
+    overflow-y: auto;
+}
+.content::-webkit-scrollbar {display:none}
+.content .contentNav{
+    height:0.44rem;
+    font-size:0.24rem;
+    font-family:PingFang SC;
+    font-weight:400;
+    line-height:0.44rem;
+    color:rgba(255,255,255,1);
+    background: #EEC14F;
+    text-align: center;
+}
+.content .pic{
+    height: 4.74rem;
+    width: 100%;
+    background: #eed18c;
+}
+.content .pic ul
+.content .teacherType{
+    height: 0.7rem;
+    width: 100%;
+    background: #EEEEEE;
+}
+.content .teacherType ul{
+    height: 0.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 0.7rem;
+}
+.content .teacherType ul li{
+    font-size: 0.28rem;
+    color: #333333;
+}
+.content .teacherType ul li:first-of-type{
+    font-size: 0.24rem;
+    color: #EEC14F;
+}
+.content .teacherDetail{
+    width: 7.26rem;
+    margin: 0 auto;
+  position: relative;
+}
+.content .teacherDetails{
+ display: none;
+}
+.content .teacherDetails:first-of-type{
+    display: block;
+}
+.content .teacherDetails{
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+.content  .teacherDetails .Avatar{
+    width: 1.32rem;
+    float: left;
+   
+}
+.content .teacherDetails .Avatar img{
+    width: 0.96rem;
+    border-radius:100%; 
+    margin-top: 0.30rem;
+    margin-left: 0.26rem;
+}
+.content .teacherDetails .Avatar img:first-of-type{
+    margin-top: 0.16rem;
+}
+.content .teacherDetails .Data{
+    width: 5.94rem;
+    float: left;
+}
+.content .teacherDetails .Data ul li{
+    width: 5.94rem;
+    height: 1.24rem;
+    border-bottom: 0.02rem solid #D8D8D8;
+}
+.content .teacherDetails .Data ul li .DataLeft{
+    float: left;
+    height: 1.24rem;
+}
+.DataLeft h2{
+    margin-top: 0.21rem;
+    font-size: 0.24rem;
+    color:#333333;
+}
+.DataLeft h3{
+    margin-top: 0.11rem;
+    font-size: 0.2rem;
+    color:#333333;
+}
+.DataLeft h4{
+    margin-top:0;
+    font-size: 0.2rem;
+    color:#666666;
+}
+.content .teacherDetails .Data ul li .DataRight{
+    float: right;
+    height: 1.24rem;
+    position: relative;
+}
+.DataRight h3{
+    width: 0.94rem;
+    height: 0.4rem;
+    border-radius:0.08rem; 
+    border:0.02rem solid #EEC14F;
+    color: #EFC243;
+    font-size: 0.22rem;
+    margin-top: 0.16rem;
+    position: absolute;
+    right: 0;
+    line-height: 0.4rem;
+    text-indent: 0.20rem;
+}
+.DataRight h4{
+    font-size: 0.2rem;
+    color: #666666;
+    margin-top: 0.84rem;
+}

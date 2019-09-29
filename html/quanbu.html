@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/quanbu.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1433565_hgpy2yee09.css"/>
+		<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<ul>
+					<li><a href="#">全部</a></li>
+					<li><a href="#">推荐</a></li>
+					<li><a href="#">VIP专区</a></li>
+					<li><a href="#">水彩</a></li>
+					<li><a href="#">素描</a></li>
+					<li><a href="#">彩铅</a></li>
+					<li><a href="#">优惠卷</a></li>
+					<li><a href="#">意见反馈</a></li>
+					<li><a href="#">消息</a></li>
+					<li><a href="#">我的笔记</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section>
+			<div class="nav">
+				<ul class="ull">
+					<li><a href="">综合</a></li>
+					<li><a href="">热门</a></li>
+					<li><a href="">新增</a></li>
+				</ul>
+			</div>
+			
+			<div class="content">
+			   <!-- <div class="con">
+				  <dl>
+				  	<dt><img src="../bootstrap/img6.png" ></dt>
+				  	<dd>
+				  		<p>你的脚咖啡店看看方法那地方</p>
+				  		<p><span>参数</span><span>参数</span><span>参数</span></p>
+				  		<p><span>导师</span><span>2042人已经</span></p>
+				  	</dd>
+				  </dl>
+				</div> -->
+			</div>
+		</section>
+		
+		<footer id="foot">
+			<a class="iconfont icon-shouye">
+				<span>首页</span>
+			</a>
+			<a class="iconfont icon-tupian">
+				<span>遇见</span>
+			</a>
+			<a class="iconfont icon-shequ">
+				<span>社区</span>
+			</a>		
+			<a class="iconfont icon-wode">
+				<span>我得</span>
+			</a>
+		</footer>
+		<script type="text/javascript">
+		$(function(){
+				 var content = document.getElementsByClassName("content")[0];
+				 var str = "";
+				$.ajax({
+					type:"get",
+					url:"https://www.fastmock.site/mock/abfa16acc4a761058e52e859828f03fc/api/login",
+					success:function(data) {
+						console.log(data);
+						for(var i in data){
+							console.log(data[i].name);
+							str += `
+							 <div class="con">
+							  <dl>
+							  	<dt><img src="$(data[i].image)" ></dt>
+							  	<dd>
+							  		<p>${data[i].name}</p>
+							  		<p><span>${data[i].name}</span><span>${data[i].name}</span><span>${data[i].name}</span></p>
+							  		<p><span>${data[i].name}</span><span>${data[i].name}</span></p>
+							  	</dd>
+							  </dl>
+							  </div>
+							`;
+						}
+						content.innerHTML = str;
+					}
+				});
+				$(".head").find("a").mousemove(function(){
+					console.log($(this))
+					$(".head").find("li").siblings().find("a").removeClass("aa")
+					$(this).addClass("aa")
+				})
+			});
+		</script>
+	</body>
+</html>

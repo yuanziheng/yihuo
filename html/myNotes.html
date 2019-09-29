@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1433565_q328pjutsse.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/myNotes.css">
+</head>
+<body>
+    <header class="head">
+        <div class="headBtm">
+            <span class="iconfont icon-iconfontjiantouzuo"></span>
+            <p>我的笔记</p> 
+        </div>
+    </header>
+    <section class="content">
+        <div class="studyTime">
+            <p>你已经连续学习<span>0</span>天</p>
+            <p>共学习<span>0</span>天</p>
+            <p>查看历史记录</p>
+        </div>
+        <div class="studyRecord">
+            <p>今日学习<span>0</span>份</p>
+            <textarea cols="40"   rows="11"></textarea>
+            <span>你最近7天没有学习记录，加油吧</span>
+        </div>
+        <div class="Mynotes">
+            <p>我的笔记</p>
+            <p><span>0</span>条笔记</p>
+            <p class="iconfont icon-you"></p>
+        </div>
+        <div class="Mynotes">
+            <p>浏览记录</p>
+            <p><span>7</span>条笔记</p>
+            <p class="iconfont icon-you"></p>
+        </div>
+        <div class="btn">+新建分类</div>
+        <div class="Mynotes">
+                <p>你当前暂无分类，点击右上角新建分类进行创建</p>
+            </div>
+    </section>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+    $(function(){
+    $("textarea").change().next();
+
+    })
+    </script>
+</body>
+</html>

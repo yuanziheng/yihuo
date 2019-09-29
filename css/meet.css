@@ -1,0 +1,143 @@
+html,body{
+    height: 100%;
+}
+html{
+    font-size: 13.333333333vw;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: rgba(74, 73, 66, 1);
+
+}
+.head{
+height: 0.8rem;
+background: rgba(74, 73, 66, 1);
+position: relative;  
+}
+.content{
+flex:1;
+overflow-y: auto;
+background: #fff;
+position: relative;
+}
+.content .aside{
+    width: 0.8rem;
+    height: 4.0rem;
+    background: #333333;
+    opacity: .8;
+    font-size: 0.06rem;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius:0.4rem; 
+}
+.content .aside .Top{
+    font-size: 0.10rem;
+}
+.content .aside .Top h1{
+    width: 0.3rem;
+    height: 0.3rem;
+    border: 0.02rem solid #fff;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
+.content .aside .Top h2{
+    font-size: 0.04rem;
+    margin-top: 0.1rem;
+    margin-left: 0.05rem;
+}
+.content .aside .Mid{
+    margin-top: 0.1rem;
+}
+.content .aside .Mid h1{
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius:100%;
+    border: solid 0.02rem #fff; 
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
+.content .aside .Mid h2{
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius:100%;
+    border: solid 0.02rem #fff; 
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
+.content::-webkit-scrollbar {display:none}
+.foot{
+height: 0.98rem;
+background: rgba(74, 73, 66, 1);
+}
+.head>p{
+width:100%;
+height:0.4rem;
+text-align: center;
+font-size:0.32rem;
+font-family:PingFang SC;
+font-weight:400;
+line-height:0.4rem;
+color:rgba(238,193,79,1);
+margin-top: 0.2rem;
+}
+.content .panel-header{
+position: relative;
+width: 100%;
+margin-top: 0.1rem;
+}
+.content .panel-header .shu{
+display: inline-block;
+width:0.04rem;
+height:0.22rem;
+background:rgba(238,193,79,1);
+opacity:1;
+margin: 0 0.23rem;
+}
+.content .panel-header .tab{
+font-size:0.24rem;
+font-family:PingFang SC;
+font-weight:400;
+line-height:0.34rem;
+color:rgba(51,51,51,1);
+opacity:1;
+}
+.content img{
+width: 6.42rem;
+height: 8.96rem;
+background:#75a2b5;
+border-radius:0.1rem;
+margin-top: 0.72rem;
+margin:0.72rem 0.54rem 0.90rem 0.54rem;
+
+}
+.foot ul{
+width: 100%;
+height:0.98;
+display:flex;
+
+}
+.foot ul li{
+display: flex;
+flex: 1;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #f0f0f0;
+}
+.foot ul li span{
+margin-top: 0.1rem;
+}
+.foot ul li span{
+
+font-size: 0.44rem;
+
+}
+.foot ul li b{
+font-size:0.24rem;
+font-weight: normal; 
+margin-top: 0.04rem;
+}

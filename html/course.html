@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http:////at.alicdn.com/t/font_1433565_q328pjutsse.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/course.css">
+</head>
+<body>
+    <header class="head">
+        <div class="headBtm">
+         <span class="iconfont icon-iconfontjiantouzuo"></span><span>多节课进阶</span><span class="iconfont icon-fangdajing"></span>   
+        </div>
+    </header>
+    <section class="content">
+       <div class="contentNav">
+           <ul>
+               <li>综合</li>
+               <li>热门</li>
+               <li>新增</li>
+           </ul>
+       </div>
+       <div class="course">
+        <div class="course1">
+           <ul>
+               <li>
+                   <img src="img/course-1.jpg" alt="">
+                   <div class="courseId">
+                        <h3>素描花卉·零基础快速掌握</h3>
+                        <p>
+                            <span>导师：秦潇</span><span>36人已购</span>
+                        </p> 
+                   </div>
+               </li>
+               <li>
+                    <img src="img/course-2.jpg" alt="">
+                    <div class="courseId">
+                         <h3>黄有维《不一样的水彩课》</h3>
+                         <p>
+                            <span>导师：黄有维</span><span>2042人已购</span>
+                         </p> 
+                    </div>
+                </li>
+                <li>
+                    <img src="img/course-1.jpg" alt="">
+                    <div class="courseId">
+                        <h3>素描花卉·零基础快速掌握</h3>
+                        <p>
+                            <span>导师：秦潇</span><span>36人已购</span>
+                        </p> 
+                    </div>
+                </li>
+                <li>
+                    <img src="img/course-2.jpg" alt="">
+                    <div class="courseId">
+                        <h3>黄有维《不一样的水彩课》</h3>
+                        <p>
+                            <span>导师：黄有维</span><span>2042人已购</span>
+                        </p> 
+                    </div>
+                </li>
+           </ul>
+        </div>
+        <div class="course2">
+                <ul>
+                    <li>
+                        <img src="img/course-1.jpg" alt="">
+                        <div class="courseId">
+                             <h3>嘻嘻嘻嘻嘻</h3>
+                             <p>
+                                 <span>导师：秦潇</span><span>36人已购</span>
+                             </p> 
+                        </div>
+                    </li>
+                    <li>
+                         <img src="img/course-2.jpg" alt="">
+                         <div class="courseId">
+                              <h3>黄有维《不一样的水彩课》</h3>
+                              <p>
+                                 <span>导师：黄有维</span><span>2042人已购</span>
+                              </p> 
+                         </div>
+                     </li>
+                     <li>
+                         <img src="img/course-1.jpg" alt="">
+                         <div class="courseId">
+                             <h3>素描花卉·零基础快速掌握</h3>
+                             <p>
+                                 <span>导师：秦潇</span><span>36人已购</span>
+                             </p> 
+                         </div>
+                     </li>
+                     <li>
+                         <img src="img/course-2.jpg" alt="">
+                         <div class="courseId">
+                             <h3>黄有维《不一样的水彩课》</h3>
+                             <p>
+                                 <span>导师：黄有维</span><span>2042人已购</span>
+                             </p> 
+                         </div>
+                     </li>
+                </ul>
+        </div>
+        <div class="course3">
+                <ul>
+                    <li>
+                        <img src="img/course-1.jpg" alt="">
+                        <div class="courseId">
+                             <h3>哈哈哈哈哈哈哈</h3>
+                             <p>
+                                 <span>导师：秦潇</span><span>36人已购</span>
+                             </p> 
+                        </div>
+                    </li>
+                    <li>
+                         <img src="img/course-2.jpg" alt="">
+                         <div class="courseId">
+                              <h3>黄有维《不一样的水彩课》</h3>
+                              <p>
+                                 <span>导师：黄有维</span><span>2042人已购</span>
+                              </p> 
+                         </div>
+                     </li>
+                     <li>
+                         <img src="img/course-1.jpg" alt="">
+                         <div class="courseId">
+                             <h3>素描花卉·零基础快速掌握</h3>
+                             <p>
+                                 <span>导师：秦潇</span><span>36人已购</span>
+                             </p> 
+                         </div>
+                     </li>
+                     <li>
+                         <img src="img/course-2.jpg" alt="">
+                         <div class="courseId">
+                             <h3>黄有维《不一样的水彩课》</h3>
+                             <p>
+                                 <span>导师：黄有维</span><span>2042人已购</span>
+                             </p> 
+                         </div>
+                     </li>
+                </ul>
+        </div>
+       </div>
+    </section>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+    $(function(){
+        $(".content .contentNav ul li").on("click",function(){//导航变色
+            $(this).css({"color":"#EEC14F"})
+            .siblings().css({"color":"#333333"})
+        });
+
+        $(".content .contentNav ul li").mouseover(function(){//切换页面
+		$(this).addClass('on').siblings().removeClass('on');
+		var index = $(this).index();
+		number = index;
+		$('.content .course>div').hide();
+		$('.content .course>div:eq('+index+')').show();
+	});
+   })
+    </script>
+</body>
+</html>

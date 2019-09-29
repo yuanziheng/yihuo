@@ -1,0 +1,60 @@
+body {display: flex;flex-direction: column;	}
+
+body,html {font-size: 26.66vw;height: 100%;}
+
+
+
+
+header{width: 100%;height: 0.58rem;background:rgba(74,73,66,1);opacity:1;}
+.head{width:100%;height: 0.58rem;overflow-x: auto;}
+.head::-webkit-scrollbar {  display: none;}
+.head ul{height: 0.58rem;overflow: hidden;}
+.head li{float: left;font-size: 0.14rem;line-height: 0.58rem;position: relative;}
+.head li>a{color:rgba(255,255,255,1);font-size: 0.16rem;}
+.head li:nth-child(1){margin-left:1.16rem}
+.head li:nth-child(2){margin-left:0.8rem}
+.head li:nth-child(2) a{color:#EEC14F}
+.head li:nth-child(2):after{content: '';width: 0.28rem;height: 0.02rem;background: #EEC14F;position: absolute;bottom:0.15rem;left: 0.02rem;}
+.head li:nth-child(3) span{font-size:0.22rem;margin-left:0.81rem;color:#EEC14F}
+
+section{
+	width: 100%;
+	flex: 1;
+	overflow-y: auto;
+	background: #f7f7f9;
+	padding-left:0.12rem
+}
+.sec{width: 100%;flex: 1;overflow-y: auto;background: #f7f7f9;}
+.sec .lunbo{padding:0.12rem 0 0.11rem 0rem}
+.sec .lunbo ul{overflow-x: auto;display: flex;}
+.sec .lunbo ul::-webkit-scrollbar{display: none;}
+.sec .lunbo li{border:1px solid red;margin-right:0.1rem}
+.sec .lunbo li a{width:2.12rem;height:0.44rem;display: inline-block;}
+
+.remen{box-shadow: 0rem 0rem 0.2rem #666666;overflow: hidden;width:3.51rem;border-radius: 0.07rem;border:1px solid #ECECEC}
+.re{padding-bottom:0.07rem}
+.re p{font-size:0.14rem;color:#333333;position: relative;text-indent: 0.07rem;}
+.re p:after{content: '';width: 0.04rem;height: 0.17rem;background: #EEC14F;position: absolute;bottom:0rem;left: 0rem;}
+.remen .men{overflow: hidden;padding-left:0.09rem;padding-right: 0.11rem;padding-top: 0.09rem;}
+.remen .men dl{overflow: hidden;padding-bottom: 0.09rem;border-bottom: 1px solid #CECECE;}
+.remen .men dl dt{float:left;border: 1px solid #FFFFFF;}
+.remen .men dl dt img{width:0.71rem;border-radius: 0.07rem;height:0.71rem}
+.remen .men dl dd{float:left;padding-left:0.08rem}
+.remen .men dl dd p:nth-child(1) a{display: inline-block;}
+.remen .men dl dd p:nth-child(1) a:nth-child(1){color:rgba(51,51,51,1);color:#333333;font-size:0.14rem}
+.remen .men dl dd p:nth-child(1) a:nth-child(2){color:rgba(255,255,255,1);margin-left:1.67rem;width:0.47rem;height:0.2rem;font-size:0.11rem;text-align: center;line-height: 0.2rem;background:rgba(238,193,79,1);}
+.remen .men dl dd p:nth-child(2) a{display: inline-block;color:#333333;font-size:0.1rem;margin-right: 0.11rem;}
+.remen .men dl dd p:nth-child(3) a{width:0.31rem;height:0.14rem;border-radius: 0.14rem;display: inline-block;border: 1px solid #EEC14F;font-size:0.08rem;margin-top:0.03rem;margin-right:0.05rem ;color:#EEC14F;text-align: center;}
+.rm{padding:0.09rem 0 0.09rem 0.09rem;overflow: hidden;}
+.rm ul{overflow-x: auto;display: flex;}
+.rm ul::-webkit-scrollbar{display: none;}
+.rm ul li{width:0.56rem;height:0.75rem;margin-right: 0.05rem;}
+.rm ul li img{width:0.56rem;height:0.75rem;border-radius: 0.03rem;}
+footer{width: 100%;height: 0.49rem;background:rgba(74,73,66,1);display: flex;justify-content: space-around;}
+
+#foot>span{text-align: center;color: white;display: flex;flex-direction: column;margin-top: 0.03rem;font-size: 0.24rem;}
+
+#foot span span {font-size: 0.12rem;color: white;}
+
+#foot>span:nth-child(1){color: #EEC14F;}
+#foot>span:nth-child(1) span{color: #EEC14F;}

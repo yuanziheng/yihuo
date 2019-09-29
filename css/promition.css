@@ -1,0 +1,164 @@
+html,body{
+    height: 100%;
+}
+html{
+    font-size: 13.333333333vw;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.head{
+height:0.8rem ;
+background:#4A4942 ;
+}
+.head .headBtm{
+height: 0.6rem;
+position: relative;
+margin-top: 0.22rem;
+display: flex;
+justify-content: space-between; 
+}
+.head .headBtm span:first-of-type{
+margin-left: 0.2rem;
+color: #EEC14F;
+font-size: 0.42rem;
+margin-top: 0.05rem;
+}
+.head .headBtm .center{
+height:0.6rem ;
+color:#EEC14F; 
+margin-left:0.2rem; 
+font-size: 0.32rem;
+}
+.head .headBtm .into{
+font-size: 0.28rem;
+color: #EEC14F;
+margin-right: 0.2rem;
+}
+.content{
+flex: 1;
+overflow-y: auto;
+}
+.content::-webkit-scrollbar {display:none}
+.content .commission{
+width: 100%;
+height: 4.52rem;
+background: #EEEEEE;
+position: relative;
+overflow: hidden;
+}
+.content .commission img{
+width: 1.68rem;
+height: 1.68rem;
+border-radius: 50%;
+position: absolute;
+left: 2.92rem;
+top: 0.68rem;
+z-index: 2;
+}
+.content .commission .jieshao{
+width: 7.04rem;
+height: 2.84rem;
+background: #fff;
+margin:1.52rem auto;
+overflow: hidden;
+border-radius:0.16rem; 
+}
+.content .commission .jieshao .leiji{
+margin-top: 1.04rem;
+text-align: center;
+}
+.content .commission .jieshao p{
+width: 6.69rem;
+height: 0.02rem;
+background: #979797;
+margin: 0.1rem auto;
+}
+.content .commission .fenlei ul{
+display: flex;
+justify-content: space-around;
+height: 0.91rem;
+width: 6.69rem;
+margin-top: 0.16rem;
+}
+.content .commission .fenlei ul li{
+width: 2.23rem;
+text-align: center;
+font-size: 0.2rem;
+color: #333333;
+border-right:0.02rem solid #979797; 
+}
+.content .commission .fenlei ul li:last-of-type{
+border:0; 
+}
+.content .course{
+width: 7.04rem;
+background: #fff;
+margin: 0 auto;
+}
+.content .course .courseHead{
+width: 7.04rem;
+height: 0.4rem;
+font-size:0.2rem;
+font-family:PingFang SC;
+line-height:0.4rem;
+color: #333;
+margin-top: 0.14rem;
+}
+.content .course .courseHead span{
+ display:block; 
+ width: 0.02rem;
+height: 0.4rem;
+background: #EEC14F; 
+ float: left;
+}
+.content .course .courseHead h2{
+float: left;
+margin-left: 0.16rem;
+}
+.content .course .courseDetails{
+width: 7.04rem;
+height: 1.38rem;
+margin-top: 0.2rem;
+}
+.content .course .courseDetails img{
+width: 2.32rem;
+height: 1.38rem;
+border-radius:0.16rem; 
+float: left;
+}
+.content .course .courseDetails .coursejieshao{
+margin-left: 0.2rem;
+float: left;
+position: relative;
+height: 1.38rem;
+width: 4.5rem;
+}
+.content .course .courseDetails .coursejieshao h2{
+font-size: 0.24rem;
+}
+.content .course .courseDetails .coursejieshao h3{
+font-size: 0.12rem;
+margin-top: 0.05rem;
+}
+.content .course .courseDetails .coursejieshao h3 span{
+display: block;
+height:0.3rem ;
+border: 0.02rem solid #979797 ;
+margin-right: 0.1rem;
+float: left;
+}
+.content .course .courseDetails .coursejieshao h4{
+font-size: 0.2rem;
+position: absolute;
+left: 0;
+bottom: 0;
+}
+.content .course .courseDetails .coursejieshao h5{
+font-size: 0.2rem;
+position: absolute;
+right: 0.22rem;
+bottom: 0;
+color: #EEC14F;
+}

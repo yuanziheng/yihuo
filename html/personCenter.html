@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1433565_fgqtyyilf7.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/personCenter.css">
+</head>
+<body>
+    <header class="head">
+        <p>个人中心</p>
+        <span class="iconfont icon-tongzhi"></span>
+        <img src="img/my-1.jpg" alt="">
+    </header>
+    <section class="content">
+        <span>我的美术馆</span>
+        <div class="name">莫相识</div>
+        <div class="nameId">ID:360153</div>
+        <div class="fans">
+            <ul>
+                <li><span>0</span>获赞</li>
+                <li><span>0</span>粉丝</li>
+                <li><span>1</span>关注</li>
+            </ul>
+        </div>
+        <div class="vip">
+            <ul>
+                <li>VIP特权</li>
+                <li><span>856</span>节艺术课任你选</li>
+                <li>开通</li>
+            </ul>
+        </div>
+        <div class="panel">
+            <div class="panel-header">
+            <span class="shu"></span><span class="tab">正在画的</span><span class="none">暂无</span><span class="Triangle"></span>
+            </div>
+            <div class="panel-body">
+            <img src="img/my-2.jpg" alt="">
+            <p>唯美水彩创作奇幻风格</p>
+            </div>
+            <div class="panel-header">
+                <span class="shu"></span><span class="tab">我的课程</span><span class="none">暂无</span><span class="Triangle"></span>
+            </div>
+            <div class="panel-body">
+                <img src="img/my-2.jpg" alt="">
+                <p>唯美水彩创作奇幻风格</p>
+            </div>
+            <div class="panel-header">
+                <span class="shu"></span><span class="tab">我的拼团</span>
+            </div>
+            <div class="panel-body">
+                <img src="img/my-2.jpg" alt="">
+                <p>唯美水彩创作奇幻风格</p>
+            </div>
+            <div class="panel-header">
+                <span class="shu"></span><span class="tab">我的作业</span>
+            </div>
+            <div class="panel-body">
+                <img src="img/my-2.jpg" alt="">
+                <p>唯美水彩创作奇幻风格</p>
+            </div>
+            <div class="panel-header">
+                <span class="shu"></span><span class="tab">我的笔记</span>
+            </div>
+            <div class="panel-body">
+                <img src="img/my-2.jpg" alt="">
+                <p>唯美水彩创作奇幻风格</p>
+            </div>
+            <div class="panel-header">
+                <span class="shu"></span><span class="tab">毕业证书</span>
+            </div>
+            <div class="panel-body">
+                <img src="img/my-2.jpg" alt="">
+                <p>唯美水彩创作奇幻风格</p>
+            </div>    
+            <div class="panel-header">
+                <span class="shu"></span><span class="tab">推广中心</span>
+            </div>
+            <div class="panel-body">
+                <img src="img/my-2.jpg" alt="">
+                <p>唯美水彩创作奇幻风格</p>
+            </div>    
+        </div>
+    </section>
+    <footer class="foot">
+        <ul>
+            <li>
+                <span class="iconfont icon-zhuyeshouyefangzidian"></span>
+                <b>首页</b>
+            </li>
+            <li>
+                <span class="iconfont icon-tupian"></span>
+                <b>遇见</b>
+            </li>
+            <li>
+                <span class="iconfont icon-shequ"></span>
+                <b>社区</b>
+            </li>
+            <li>
+                <span class="iconfont icon-wode"></span>
+                <b>我的</b>
+            </li>
+        </ul>
+    </footer>
+    
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+     $(function(){
+         $(".panel").on("click", ".panel-header", function() {
+            var next = $(this).next();
+            next.slideToggle("slow");
+            $(".panel-body").not(next).slideUp();
+        }); 
+         $(".foot li").on("click",function(){
+             $(this).css({"color":"#EEC14F"})
+             .siblings().css({"color":"#fff"});
+         })
+     })
+
+    
+    </script>
+</body>
+</html>

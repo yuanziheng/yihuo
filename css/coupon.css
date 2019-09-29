@@ -1,0 +1,87 @@
+html,body{
+    height: 100%;
+}
+html{
+    font-size: 13.3333333vw;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+height:0.8rem ;
+background:#4A4942 ;
+}
+.head .headBtm{
+height: 0.44rem;
+margin-top: 0.22rem;
+margin-left: 0.2rem;
+color: #EEC14F;
+display: flex;
+justify-content: space-between;
+}
+.head .headBtm span{
+ font-size: 0.42rem;   
+}
+.head .headBtm p{
+  margin-right: 3.26rem;
+  font-size:0.32rem; 
+}
+.content .contentNav{
+height: 0.74rem;
+border-bottom: 0.02rem solid #D8D8D8;
+overflow: hidden;
+}
+.content .contentNav ul{
+margin-top: 0.16rem;
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.content .contentNav ul li{
+width: 2.48rem;
+height: 0.4rem;
+color: #333333;
+text-align: center;
+line-height: 0.4rem;
+border-right:0.02rem solid #D8D8D8; 
+font-size: 0.28rem;
+}
+.content .contentNav ul li:first-of-type{
+   color: #EEC14F;
+    }
+.content .contentNav ul li:last-of-type{
+border: none;
+}
+.content .type{
+    position: relative;
+}
+.content .type>div{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.content .type>div:first-of-type{
+    display: block;
+}
+.content .type input{
+width:5.96rem ;
+height: 0.6rem;
+border:0.02rem solid rgba(151,151,151,1);
+border-radius:0.12rem;
+box-sizing: border-box;
+padding-left:0.2rem;
+margin-left: 0.24rem; 
+margin-top: 0.1rem;
+}
+.content .type button{
+width:0.90rem;
+height:0.6rem;
+border:0.02rem solid #979797;
+border-radius:0.12rem;
+font-size:0.28rem;
+font-family:PingFang SC;
+color: #979797;
+}
