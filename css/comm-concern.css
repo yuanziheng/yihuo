@@ -110,10 +110,11 @@ section a{
 	display: block;
 	width: 3.5rem;
 	height: 0.77rem;
-	background:gold;
+	background:url(../img/smallbg.png) repeat-y;
 	border-radius: 0.1rem;
 	margin-top: 0.06rem;
 	position: relative;
+	overflow: hidden;
 }
 section a p{
 	font-size: 0.22rem;
